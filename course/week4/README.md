@@ -22,6 +22,20 @@ There is code for you to complete in the following files
 
 We recommend you to follow the instructions on Uplimit closely.
 
+## Final Hyperparameters
+
+The following are the final hyperparameters chosen for deployment of the RAG system:
+
+- **questions_file**: `data/questions/questions.csv`
+- **starpoint_api_key**: `YOUR_STARPOINT_API_KEY`
+- **embedding_model**: `thenlper/gte-small`
+- **max_workers**: `1`
+- **text_search_weight**: `0.0`
+- **hyde**: `False`
+
+These hyperparameters were selected based on extensive experimentation and evaluation to ensure optimal performance of the RAG system.
+
+
 ## Results
 
 |hit_rate|embedding|text_search_weight|hyde_embeddings
