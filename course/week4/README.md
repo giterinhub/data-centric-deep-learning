@@ -22,7 +22,27 @@ There is code for you to complete in the following files
 
 We recommend you to follow the instructions on Uplimit closely.
 
+## Results
 
+|hit_rate|embedding|text_search_weight|hyde_embeddings
+|-------------------|:------------------:|:------------------:|---------------:|
+|0.9898477157360406|thenlper/gte-small|0.0|False
+|0.9898477157360406|thenlper/gte-small|0.5|False
+|0.9695431472081218|all-MiniLM-L6-v2|0.5|False
+|0.868020304568528|thenlper/gte-small|0.0|True
+|0.8527918781725888|thenlper/gte-small|0.5|True
+|0.8477157360406091|all-MiniLM-L6-v2|0.0|True
+|0.9695431472081218|all-MiniLM-L6-v2|0.0|False
+|0.8426395939086294|all-MiniLM-L6-v2|0.5|True
+
+## Explanation
+
+Due to the stupid data.zip file of 3 GB that can not be committed my whole codespaces got unstable and none of my code could be committed. 
+Add this in your gitignore or provide some better solution for this. Not redoing all the work this time.
+
+## RAW Terminal Output
+
+``` bash
     scripts/optimize_params.py:1:0: F0002: /workspaces/data-centric-deep-learning/course/week4/scripts/optimize_params.py: Fatal error while checking '/workspaces/data-centric-deep-learning/course/week4/scripts/optimize_params.py'. Please open an issue in our bug tracker so we address this. There is a pre-filled template that you can use in '/home/vscode/.cache/pylint/pylint-crash-2024-08-04-20-05-10.txt'. (astroid-error)
     Pylint is not happy:
     Fix Pylint warnings listed above or say --no-pylint.
@@ -1044,3 +1064,5 @@ usage: git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] <co
     --[no-]reference      use the 'reference' format to refer to commits
 
 @giterinhub ➜ /workspaces/data-centric-deep-learning/course/week4 (main) $ 
+
+```
